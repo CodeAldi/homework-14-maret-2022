@@ -19,27 +19,33 @@ player1.add_monster([phpkachu,cppmander,torterraform])
 ## Player 2 should have sqlrtle, cppmander, and bashtoise
 player2.add_monster([sqlrtle,cppmander.clone,bashtoise])
 # Print the current stats of each players here
-player1.stat
-player2.stat
+puts player1
+puts
+puts player2
+puts
 puts '=======================Turn 1======================='
 puts ''
 
 # Make your Player 1's phpkachu attacks Player 2's cppmander here
 #print "#{player1.name}'s "
-puts "#{player1.name}'s ".concat(player1.monsters[0].attack(player2.monsters[1]))
+puts "#{player1.name}'s ".concat(player1.player_monsters[0].attack(player2.player_monsters[1]))
 
 # Print the current stats of each players here
 puts
-player1.stat
-player2.stat
+puts player1
+puts
+puts player2
+puts
 # Make your Player 2's bashtoise attacks Player 1's cppmander here
 #print "#{player2.name}'s "
 #player2.monsters[0].attack(player1.monsters[1])
-puts "#{player2.name}'s ".concat(player2.monsters[0].attack(player1.monsters[1]))
+puts "#{player2.name}'s ".concat(player2.player_monsters[0].attack(player1.player_monsters[1]))
 # Print the current stats of each players here
 puts
-player1.stat
-player2.stat
+puts player1
+puts
+puts player2
+puts
 
 =begin
 #quiz 1 & quiz 2
