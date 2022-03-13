@@ -1,4 +1,4 @@
-\  # Abstraction and Encapsulation
+# Abstraction and Encapsulation
 
 ![alt text](assets/saklar.jpg)
 

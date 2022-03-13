@@ -19,8 +19,8 @@ class Monster
     monster.take_damage(@attack_point)
     take_damage(0.5 * monster.attack_point)
 
-    puts "#{@name} attacks enemy's #{monster.name}, deals #{@attack_point.to_f} damage and takes #{0.5 * monster.attack_point} damage"
-    puts nil
+    return "#{@name} attacks enemy's #{monster.name}, deals #{@attack_point.to_f} damage and takes #{0.5 * monster.attack_point} damage"
+    #puts nil
   end
 
   def take_damage(amount)

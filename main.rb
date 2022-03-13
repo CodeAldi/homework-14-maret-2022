@@ -25,17 +25,19 @@ puts '=======================Turn 1======================='
 puts ''
 
 # Make your Player 1's phpkachu attacks Player 2's cppmander here
-print "#{player1.name}'s "
-player1.monsters[0].attack(player2.monsters[1])
+#print "#{player1.name}'s "
+puts "#{player1.name}'s ".concat(player1.monsters[0].attack(player2.monsters[1]))
 
 # Print the current stats of each players here
-
+puts
 player1.stat
 player2.stat
 # Make your Player 2's bashtoise attacks Player 1's cppmander here
-print "#{player2.name}'s "
-player2.monsters[0].attack(player1.monsters[1])
+#print "#{player2.name}'s "
+#player2.monsters[0].attack(player1.monsters[1])
+puts "#{player2.name}'s ".concat(player2.monsters[0].attack(player1.monsters[1]))
 # Print the current stats of each players here
+puts
 player1.stat
 player2.stat
 
