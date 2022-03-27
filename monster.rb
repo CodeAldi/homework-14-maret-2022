@@ -1,6 +1,6 @@
 # monster.rb
 class Monster
-  attr_accessor :name, :hitpoint, :attack_point
+  attr_reader :name, :hitpoint, :attack_point
   def initialize(name, hitpoint, attack_point)
     @name = name
     @hitpoint = hitpoint

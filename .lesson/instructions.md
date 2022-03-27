@@ -251,7 +251,7 @@ class Monster
 end
 ```
 
-However, we can actually make it even better. Instead of having the implementation details on how a `monster` object takes a damage, we can just enapsulate that behavior into its own method, let's name it `take_damage`. This way, in our `attack` method, whenever any object takes damage, we can just call that object's `take_damage` method and pass the amount of damage it should take. Our implementation now should look something like this:
+However, we can actually make it even better. Instead of having the implementation details on how a `monster` object takes a damage, we can just encapsulate that behavior into its own method, let's name it `take_damage`. This way, in our `attack` method, whenever any object takes damage, we can just call that object's `take_damage` method and pass the amount of damage it should take. Our implementation now should look something like this:
 
 ```ruby
 # monster.rb
